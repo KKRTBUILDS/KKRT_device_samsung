@@ -28,11 +28,16 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
+USE_LEGACY_BOOTANIMATION := false
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_USES_BLUR := false
+
 ## Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
+
 ## Inherit some common AOSP stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
