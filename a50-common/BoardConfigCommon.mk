@@ -91,8 +91,8 @@ TARGET_KERNEL_CONFIG := a50_defconfig
 
 # Clang
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := prelude
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin
+TARGET_KERNEL_CLANG_VERSION := proton
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/proton/bin
 KERNEL_SUPPORTS_LLVM_TOOLS := true
 
 
